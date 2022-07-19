@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Responsive Vertical Timeline | CodyHouse</title>
+</head>
+<body>
+
+	<header class="cd-main-header text-center flex flex-column flex-center">
+    <h1>History of San Jose Digital Inclusion</h1>
+
+
+    <!--<p class="margin-top-sm">👈<a class="color-inherit" href="https://codyhouse.co/gem/vertical-timeline/">Article &amp; Download</a></p>-->
+  </header>
+
+  <!-- Adding Firebase configuration -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDe9txzVlL-07JRgHO3aAH9FHV4ComEFRI",
+      authDomain: "sj-moti-dif.firebaseapp.com",
+      projectId: "sj-moti-dif",
+      storageBucket: "sj-moti-dif.appspot.com",
+      messagingSenderId: "404312360346",
+      appId: "1:404312360346:web:bb77ea671bd766da4a6623",
+      measurementId: "G-BZY1V9WMZV"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <section class="cd-timeline js-cd-timeline">
+    <p class="background: url(/assets/img/sj.png)">
+      <div class="container max-width-lg cd-timeline__container">
+    
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <!--<img src="assets/img/cd-icon-picture.svg" alt="Picture">-->
+          <img src="assets/img/logo-sj.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>San José’s Green Technology program raises $130,000 for low-income student and household laptops</h2>
+          <p class="color-contrast-medium">San José Mayor Sam Liccardo, in partnership with Revivn and the California Emerging Technology Fund (CETF), announced a fundraising milestone of more than $130,000 for purchasing new laptops for low-income residents in San José.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">June 2nd, 2022</span>
+            <a href="https://www.sanjoseca.gov/Home/Components/News/News/4181/"  target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-sj.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>San Jose Named Most Innovative City in the US</h2>
+          <p class="color-contrast-medium">For the second consecutive year, the Center for Digital Government recognized the City of San José as the most innovative city in the United States with a population of over 500,000. Winning this award means San José exemplifies the best deployment of technology to address the most pressing issues of city life.</p>
+          
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Dec 9th, 2021</span>
+            <a href="https://www.sanjoseca.gov/Home/Components/News/News/3594/4699" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-dif.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>San Jose Creates Tech Support Hotline</h2>
+          <p class="color-contrast-medium">San José Mayor Sam Liccardo announced the launch of the Tech Support Helpline Pilot, a free support line to help San José Digital Inclusion Fund participants with their computers and internet access.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">July 23, 2021</span>
+            <a href="https://www.sanjoseca.gov/Home/Components/News/News/3128/4699" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-adobe.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Adobe donates $250k and total revenue surpasses $5 Million</h2>
+          <p class="color-contrast-medium">San José Mayor Sam Liccardo announced that the Adobe Foundation has granted $250,000 to the San José Digital Inclusion Fund.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">July 1st, 2021</span>
+            <a href="https://www.sanjoseca.gov/Home/Components/News/News/3053/4699" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-sj.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>San José to digitally connect more than 300,000 residents</h2>
+          <p class="color-contrast-medium">San José will surpass 300,000 residents connected to the digital world by the end of 2022—serving a population the size of the entire cities of St. Louis, Cincinnati or Pittsburgh.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Oct 13, 2020</span>
+            <a href="https://www.sanjoseca.gov/Home/Components/News/News/1967/" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-sj.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>San José provides high-speed internet access to thousands of students and residents</h2>
+          <p class="color-contrast-medium">San José will be providing 11,000 high-end hotspots with unlimited 4G LTE data plans to unconnected and under-connected students and residents through a new public-private partnership with AT&T.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Aug 3rd, 2020</span>
+             <a href="https://www.sanjoseca.gov/Home/Components/News/News/1681/" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-att.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>AT&T AND SAN JOSÉ LAUNCH COLLABORATION VALUED AT MORE THAN A MILLION DOLLARS</h2>
+          <p class="color-contrast-medium">AT&T will deploy Internet of Things (IoT) technology across 14 San José Parks to provide public Wi-Fi connectivity, improve park lighting quality, expand public safety capabilities, and reduce energy usage across the City. AT&T is also providing $200,000 in contributions to help local community organizations tackle the digital divide. </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">May 14, 2019</span>
+            <a href="https://www.sanjoseca.gov/Home/Components/News/News/428/" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-dif.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>SAN JOSÉ LAUNCHES DIGITAL INCLUSION FUND TO CLOSE THE DIGITAL DIVIDE</h2>
+          <p class="color-contrast-medium">San José has authorized the creation of the San José Digital Inclusion Fund (DIF). This initiative, funded through private corporate investment and the largest of its kind in the nation, will provide programs and grants to the community to close the digital divide in San José.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Feb 12, 2019</span>
+             <a href="https://www.sanjoseca.gov/Home/Components/News/News/438/" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-dif.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Creation of the Digital Inclusion Fund</h2>
+          <p class="color-contrast-medium"> </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">May 2018</span>
+            <a href="" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-dif.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>San José approves Small Cell Development to narrow the digital divide</h2>
+          <p class="color-contrast-medium">SIn 2018, the City Council approved (1) public-private partnership agreements with AT&T, Verizon, and Mobilitie (on behalf of Sprint) for small cell deployments on City-owned streetlights and directed the City Manager to allocate small cell usage fee revenue to create a DIF within the General Fund to support efforts to close the digital divide in San José </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">2018</span>
+             <a href="https://www.sanjoseca.gov/Home/Components/News/News/438/" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/logo-sj.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2> San José Digital Inclusion & Broadband Strategy Approved </h2>
+          <p class="color-contrast-medium"> The City Council approved the City’s Digital Inclusion and Broadband Strategy, which established an intentional focus on digital inclusion and equity supported by a sustainable funding stream and with a path to close the digital divide.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Nov 13, 2017</span>
+            <a href="" target="_blank" class="btn btn--subtle">READ MORE</a>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+    </p>
+    </div>
+
+  </section> <!-- cd-timeline -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
