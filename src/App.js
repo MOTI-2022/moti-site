@@ -2,7 +2,8 @@ import Card from "./components/Card.jsx";
 import posts from "./data/post";
 import Navbar from './Navigation/Navbar.js';
 import Resources from './cards/Resources.js';
-import { getTimeline, Timeline } from './timeline/timeline.jsx';
+// import { getTimeline, Timeline } from './timeline/timeline.jsx';
+import { Timeline } from './timeline/timeline_event.jsx'
 import { Component } from "react";
 
 // // FIREBASE
@@ -48,6 +49,7 @@ function App() {
   async function apiCall() {
     const querySnapshot = await getDocs(query(collection(db, "timeline"), orderBy("date")));
     querySnapshot.forEach((doc, key) => {
+      console.log(doc.data())
       let document = { key: key, docID: doc.id, docData: doc.data() }; // This is custom object I created and added the data received from backend
       setData((prevState) => [...prevState, document]); // Here we append each document to an array, which is our state called "data"
     });

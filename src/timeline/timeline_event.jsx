@@ -5,17 +5,17 @@ import 'react-vertical-timeline-component/style.min.css';
 const Event = (props) => {
     const {year, img, title, date, description} = props
     return(
-        <VerticalTimeline lineColor={ 'black' }>
+        <VerticalTimeline lineColor={ '#CECECE' }>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentStyle={{ background: '#ffffff', color: '#000000' }}
                 date={year} // Prop: Year
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: '#D9D9D9', color: '#fff' }}
                 // icon={img} // Prop: img
             >
                 {/* Prop: Event Title */}
                 <h2 className="vertical-timeline-element-title"> {title} </h2>
-                {/* <h4> {date} </h4> */}
+                <h4> {date} </h4>
                 {/* Prop: Event Description */}
                 <p>
                 {description}
@@ -25,17 +25,32 @@ const Event = (props) => {
     )
 }
 
-const DateIcon = ({img}) => {
-    return(
-        <VerticalTimelineElement
-        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-        // icon={img}
-        />
+function Timeline(props) {
+    const newDate = props.timelineData.date.toDate().toDateString()
+    return (
+        <section>
+            <Event
+                year={props.timelineData.year}
+                img={props.timelineData.img}
+                title={props.timelineData.title}
+                date={newDate}
+                description={props.timelineData.description}
+            />
+        </section>
+
     )
 }
 
+// const DateIcon = ({img}) => {
+//     return(
+//         <VerticalTimelineElement
+//         iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+//         // icon={img}
+//         />
+//     )
+// }
 
-export {Event, DateIcon};
+export {Timeline};
 
 
 
