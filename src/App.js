@@ -2,7 +2,6 @@ import Card from "./components/Card.jsx";
 import posts from "./data/post";
 import Navbar from './Navigation/Navbar.js';
 import Resources from './cards/Resources.js';
-// import { getTimeline, Timeline } from './timeline/timeline.jsx';
 import { Timeline } from './timeline/timeline_event.jsx'
 import { Component } from "react";
 
