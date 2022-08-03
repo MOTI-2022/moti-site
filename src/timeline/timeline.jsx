@@ -5,21 +5,21 @@ import 'react-vertical-timeline-component/style.min.css';
 const Event = (props) => {
     const {year, img, title, date, description} = props
     return(
-        <VerticalTimeline lineColor={ '#CECECE' }>
+        <VerticalTimeline layout={ "2-columns" } lineColor={ '#CECECE' }>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: '#ffffff', color: '#000000' }}
+                contentStyle={{ background: '#D9D9D9', color: '#000000' }}
                 date={year} // Prop: Year
                 iconStyle={{ background: '#D9D9D9', color: '#fff' }}
-                // icon={img} // Prop: img
+                // icon={{img}} // Prop: img
             >
                 {/* Prop: Event Title */}
                 <h2 className="vertical-timeline-element-title"> {title} </h2>
-                <h4> {date} </h4>
+                <h3> {date} </h3>
                 {/* Prop: Event Description */}
-                <p>
+                <body>
                 {description}
-                </p>
+                </body>
             </VerticalTimelineElement>
         </VerticalTimeline>
     )

@@ -46,7 +46,7 @@ function App() {
   }, []);
 
   async function apiCall() {
-    const querySnapshot = await getDocs(query(collection(db, "timeline"), orderBy("date")));
+    const querySnapshot = await getDocs(query(collection(db, "timeline"), orderBy("date", "desc")));
     querySnapshot.forEach((doc, key) => {
       console.log(doc.data())
       let document = { key: key, docID: doc.id, docData: doc.data() }; // This is custom object I created and added the data received from backend
